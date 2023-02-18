@@ -1,16 +1,18 @@
-# Tailwindcss Starter template for future projects
+# CatchUp
 
-I structured this based on how i would want my folder structure to look like, so it may or may not be ideal to some.
-Feel free to make your changes to the folder structure, add your ```npm run``` commands, and install your favourite plugins.
+## Election break projects
+
+CatchUp is a working landing page designed by Ogunya Marvelous, and developed into a website by me as part our ji=oint effort in pushing each other further on our learning, development and designing paths
 
 Steps to get started:
 
 * Clone, Fork or Download the repo from github
 * Open in your favourite Code Editor (VSCode *wink)
-* Open your command line or terminal, with the ```My custom template``` folder being the current directory
+* Open your command line or terminal, with the ```CatchUp``` folder being the current directory
 * Use the command ```npm install``` to install all the necessary dependencies that comes with the template
 * Since its custom, it has a custom command to get Tailwind and Postcss doing their jobs, run ```npm run pcss`` (pcss for postcss *wink)
+
 It should have your base utilities ready for you.
-Then,  run ```npm dev build``` to host locally in nyour browser.
+Then, run ```npm dev build``` to host locally in your browser.
 
 Enjoy!!!
