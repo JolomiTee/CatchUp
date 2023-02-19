@@ -8,8 +8,35 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Hi Taiwo!</h1>
-    <p>What are we doing with Tailwindcss today?</p>
+    <main id="main" role="main" class="container">
+        <header>
+            <nav class="nav flex flex-grow justify-between py-5 text-nav" id="nav">
+                <div class="logo">
+                    <img src="../assets/icons/Catch Up.svg" alt="Catch Up logo" class="">
+                </div>
+
+                <ul class="nav-list flex space-x-16 ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Features</a>
+                    </li>
+                </ul>
+
+                <div class="flex space-x-10">
+                    <button type="button" role="button">Log in</button>
+                    <button type="button" role="button" class="bg-blue">Sign Up</button>
+                </div>
+            </nav>
+        </header>
+    </main>
 
 
     <script src="../javascript/main.js"></script>

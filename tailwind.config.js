@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+    },
     fontFamily: {
       'sans' : ['"DM Sans"', 'system-ui'],
       'serif' : ['Adamina', 'system-ui'],
