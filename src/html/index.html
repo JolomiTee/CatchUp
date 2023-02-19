@@ -6,36 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Custom Template</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <main id="main" role="main" class="container">
+    <main id="main" role="main" class="mx-auto pb-10">
         <header>
-            <nav class="nav flex flex-grow justify-between py-5 text-nav" id="nav">
-                <div class="logo">
-                    <img src="../assets/icons/Catch Up.svg" alt="Catch Up logo" class="">
+            <nav class="py-5 px-3 sm:px-5 md:px-10 lg:px-20 flex justify-between border-b border-b-grey">
+                <div>
+                    <img src="../assets/icons/Catch Up.svg" alt="CatchUp Logo" class="w-24">
                 </div>
-
-                <ul class="nav-list flex space-x-16 ">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">How it works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Company</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Features</a>
-                    </li>
-                </ul>
-
-                <div class="flex space-x-10">
-                    <button type="button" role="button">Log in</button>
-                    <button type="button" role="button" class="bg-blue">Sign Up</button>
+    
+                <button class="" aria-label="Navigation" title="Navigation button" type="button" role="button">
+                    <i class="text-blue text-nav fa fa-duotone fa-bars"></i>
+                </button>
+    
+    
+                <div  class="text-nav text-center hidden">
+                    <ul class="space-y-5">
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Company <i class="fa fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="#">Features</a></li>
+                    </ul>
+        
+                    <div class="mt-5 flex justify-center space-x-10">
+                        <button class="px-5 py-3">Log in</button>
+    
+                        <button class="bg-blue text-white px-5 py-3 rounded-md">Sign up</button>
+                    </div>
+    
                 </div>
-            </nav>
+    
+            </nav>      
         </header>
+
+        <section class="mt-14 md:flex md:space-x-10 px-3 sm:px-5 md:px-10 lg:px-24">
+            <div class="flex space-x-3 my-8 md:w-[1200px]">
+                <div class="flex flex-col space-y-3">
+                    <img src="../assets/icons/socialGroup2.svg" alt="">
+                    <img src="../assets/pngs/foodies.png" alt="">
+                    <img src="../assets/icons/popupGroup1.svg" alt="">
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <img src="../assets/pngs/groupies.png" alt="">
+                    <img src="../assets/icons/popupGroup2.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="flex flex-col text-start justify-start space-y-5">
+                <img src="../assets/icons/socialGroup1.svg" alt="" class="hidden">
+                <h1 class="text-stat lg:text-title">Make time for those that really matter.</h1>
+                <p class="text-paragraph">What better way to have a scheduled hangout with your friends where you can unwind afte a busy week, this is why we built catch and all in one platform that solves this problem.</p>
+                <button class="bg-blue text-white px-5 py-3 rounded-md flex justify-center items-center w-[290px] md:w-[250px] md:h-[45px] lg:h-[50px]">Create event <i class="fa fa-solid arrow-right"></i></button>
+            </div>
+
+        </section>
+
+
+        <!-- Stats -->
+        <section class="mt-10 flex-wrap flex justify-center md:justify-end md:mr-24 gap-x-8 gap-y-5">
+
+            <span class="flex flex-col items-center justify-center">
+                <p class="text-sm  sm:text-paragraph">Active Users</p>
+                <p class="text-2xl sm:text-stat">90k +</p>
+            </span>
+            <span class="flex flex-col items-center justify-center">
+                <p class="text-sm  sm:text-paragraph">Countries used</p>
+                <p class="text-2xl sm:text-stat">100 +</p>
+            </span>
+            <span class="flex flex-col items-center justify-center">
+                <p class="text-sm  sm:text-paragraph">User retention rate</p>
+                <p class="text-2xl sm:text-stat">70%</p>
+            </span>
+
+
+        </section>
     </main>
 
 
