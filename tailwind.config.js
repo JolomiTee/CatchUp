@@ -6,7 +6,7 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
-      xl: '1440px',
+      xl: '1300px',
     },
     fontFamily: {
       'sans' : ['"DM Sans"', 'system-ui'],
@@ -50,7 +50,7 @@ module.exports = {
           lineHeight: '28px',
           fontWeight: '500'
         }],
-        title2: ['60px', {
+        title2: ['50px', {
           lineHeight: '81px',
           fontWeight: '400'
         }],
