@@ -4,3 +4,16 @@
 
 /* Font family */
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Cherry+Swash:wght@700&family=DM+Sans:wght@400;500;700&display=swap');
+
+
+@layer components{
+    .navbar, #mobileNav{
+        box-shadow: 0px 1px 10px #999;
+    }
+}
+
+@media screen and (min-width: 976px) {
+    #mobileNav{
+        box-shadow: none !important;
+    }
+}

@@ -10,26 +10,32 @@
 </head>
 <body>
     <main id="main" role="main" class="mx-auto pb-10">
-        <header class="sticky top-0 bg-white">
-            <nav class="py-5 px-3 sm:px-5 md:px-10 lg:px-20 flex justify-between border-b border-b-grey">
+        <header class="sticky top-0 bg-white" id="navbar">
+            <nav class="py-5 px-3 sm:px-5 md:px-10 lg:px-20 flex justify-between items-center border-b border-b-grey lg:space-x-[10%] xl:space-x-[20%]">
                 <div>
-                    <img src="./assets/icons/Catch Up.svg" alt="CatchUp Logo" class="w-24">
+                    <img src="./assets/icons/Catch Up.svg" alt="CatchUp Logo" class="w-24 md:w-32 lg:w-36">
                 </div>
     
-                <button class="" aria-label="Navigation" title="Navigation button" type="button" role="button">
+                <button class="lg:hidden" aria-label="Navigation" title="Navigation button" type="button" role="button" id="navButton">
                     <i class="text-blue text-nav fa fa-duotone fa-bars"></i>
                 </button>
     
     
-                <div  class="text-nav text-center hidden">
-                    <ul class="space-y-5">
+                <div id="mobileNav" class="text-nav lg:text-base xl:text-nav text-center absolute hidden right-0 top-0 p-10 bg-grey lg:bg-opacity-0 lg:flex lg:justify-between lg:items-center lg:p-0 lg:relative  lg:flex-grow">
+                    <div class="flex justify-end mb-3 lg:hidden">
+
+                        <button class="" aria-label="Navigation" title="Navigation button" type="button" role="button" id="navCloseButton">
+                            <i class="text-blue text-nav fa fa-duotone fa-close"></i>
+                        </button>
+                    </div>
+                    <ul class="space-y-5 lg:flex lg:justify-between lg:items-center lg:space-y-0 lg:space-x-5 xl:space-x-10">
                         <li><a href="#">How it works</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Company <i class="fa fa-solid fa-chevron-down"></i></a></li>
                         <li><a href="#">Features</a></li>
                     </ul>
         
-                    <div class="mt-5 flex justify-center space-x-10">
+                    <div class="mt-5 flex justify-center space-x-5 lg:mt-0">
                         <button class="px-5 py-3">Log in</button>
     
                         <button class="bg-blue text-white px-5 py-3 rounded-md">Sign up</button>
@@ -58,7 +64,10 @@
                 <img src="./assets/icons/socialGroup1.svg" alt="" class="hidden">
                 <h1 class="text-stat lg:text-title">Make time for those that really matter.</h1>
                 <p class="text-paragraph">What better way to have a scheduled hangout with your friends where you can unwind afte a busy week, this is why we built catch and all in one platform that solves this problem.</p>
-                <button class="bg-blue text-white px-5 py-3 rounded-md flex justify-center items-center w-[290px] md:w-[250px] md:h-[45px] lg:h-[50px]">Create event <i class="fa fa-solid arrow-right"></i></button>
+                <div class="flex justify-center xl:justify-start">
+
+                    <button class="bg-blue text-white px-5 py-3 rounded-md flex justify-center items-center w-[290px] md:w-[250px] md:h-[45px] lg:h-[50px]">Create event <i class="fa fa-solid arrow-right"></i></button>
+                </div>
             </div>
 
         </section>
@@ -172,46 +181,46 @@
         <div>
             <img src="./assets/icons/Catch Up.svg" alt="Catchup">
 
-            <div class="flex flex-wrap mt-5 justify-between">
-                <div class="links">
+            <div class="flex flex-col md:flex-row flex-wrap mt-5 justify-between">
+                <div class="links mb-5">
                     <p class="text-footer1 mb-5">Company</p>
                     <ul class="space-y-3">
-                        <li class="text-footer2"><a href="#">A</a>bout Us</li>
-                        <li class="text-footer2"><a href="#">Careers</a></li>
-                        <li class="text-footer2"><a href="#">Partner with Us</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">A</a>bout Us</li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Careers</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Partner with Us</a></li>
                     </ul>
                 </div>
-                <div class="links">
+                <div class="links mb-5">
                     <p class="text-footer1 mb-5">Learn</p>
                     <ul class="space-y-3">
-                        <li class="text-footer2"><a href="#">Privacy Policy</a></li>
-                        <li class="text-footer2"><a href="#">Terms & Conditions</a></li>
-                        <li class="text-footer2"><a href="#">Security</a></li>
-                        <li class="text-footer2"><a href="#">Cookies Settings</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Privacy Policy</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Terms & Conditions</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Security</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Cookies Settings</a></li>
                     </ul>
                 </div>
-                <div class="links">
+                <div class="links mb-5">
                     <p class="text-footer1 mb-5">Help</p>
                     <ul class="space-y-3">
-                        <li class="text-footer2"><a href="#">F</a>AQs</li>
-                        <li class="text-footer2"><a href="#">Cutomer Support</a></li>
-                        <li class="text-footer2"><a href="#"></a>Help Center</li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">F</a>AQs</li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Cutomer Support</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#"></a>Help Center</li>
                     </ul>
                 </div>
-                <div class="links">
+                <div class="links mb-5">
                     <p class="text-footer1 mb-5">Socials</p>
                     <ul class="space-y-3">
-                        <li class="text-footer2"><a href="#">Twitter</a></li>
-                        <li class="text-footer2"><a href="#">Facebook</a></li>
-                        <li class="text-footer2"><a href="#">LinkedIn</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Twitter</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Facebook</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">LinkedIn</a></li>
                     </ul>
                 </div>
-                <div class="links">
+                <div class="links mb-5">
                     <p class="text-footer1 mb-5">Company</p>
                     <ul class="space-y-3">
-                        <li class="text-footer2"><a href="#">A</a>bout Us</li>
-                        <li class="text-footer2"><a href="#">Careers</a></li>
-                        <li class="text-footer2"><a href="#">Partner with Us</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">A</a>bout Us</li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Careers</a></li>
+                        <li class="text-sm md:text-base lg:text-footer2"><a href="#">Partner with Us</a></li>
                     </ul>
                 </div>
 

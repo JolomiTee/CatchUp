@@ -63,7 +63,6 @@ module.exports = {
           fontWeight: '400'
         }],
         footnote: ['14px', {
-          lineHeight: '48px',
           fontWeight: '700'
         }],
   
